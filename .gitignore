@@ -5,6 +5,9 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+# Ignore all .properties files in the resources folder
+src/main/resources/*.properties
+
 ### STS ###
 .apt_generated
 .classpath
@@ -35,3 +38,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Ignore all .properties files in the resources folder
+src/main/resources/*.properties
