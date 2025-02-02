@@ -20,19 +20,13 @@ public class ApiService {
 
     private final RestTemplate restTemplate;
 
-    private final ApiConfig apiConfig;
-
 
     @Value("${base.url}")
     private String baseURL;
 
 
 
-
-
-
  public ApiService(ApiConfig apiConfig){
-     this.apiConfig = apiConfig;
      this.restTemplate = new AppConfig(apiConfig).restTemplate();
  }
 

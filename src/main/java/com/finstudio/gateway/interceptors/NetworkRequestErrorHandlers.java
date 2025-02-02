@@ -18,7 +18,7 @@ public class NetworkRequestErrorHandlers implements ResponseErrorHandler {
 
     @Override
     public void handleError(URI url, HttpMethod method, ClientHttpResponse response) throws IOException {
-        System.out.println("Api Error ❌: method: "+method.name()+" Scheme path: "+ url.getScheme()+url.getRawSchemeSpecificPart()+" Error: "+new String(response.getBody().readAllBytes()));
+        System.out.println("Api Error ❌: method: "+method.name()+" from: "+ url.getScheme()+url.getRawSchemeSpecificPart()+" Error: "+new String(response.getBody().readAllBytes()));
        // throw custom interceptors from here
     }
 
